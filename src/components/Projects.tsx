@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { projects } from '../data/projects';
-import { ExternalLink, Github } from 'lucide-react';
+// import { ExternalLink, Github } from 'lucide-react';
 
 const Projects: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<string>('all');
@@ -59,14 +59,14 @@ const Projects: React.FC = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-4 left-4 right-4 flex gap-2">
-                    <button className="flex-1 bg-white/90 backdrop-blur-sm text-gray-800 py-2 px-4 rounded-lg font-semibold hover:bg-white transition-colors duration-200 flex items-center justify-center gap-2">
+                    {/* <button className="flex-1 bg-white/90 backdrop-blur-sm text-gray-800 py-2 px-4 rounded-lg font-semibold hover:bg-white transition-colors duration-200 flex items-center justify-center gap-2">
                       <ExternalLink size={16} />
                       View
                     </button>
                     <button className="flex-1 bg-gray-800/90 backdrop-blur-sm text-white py-2 px-4 rounded-lg font-semibold hover:bg-gray-900 transition-colors duration-200 flex items-center justify-center gap-2">
                       <Github size={16} />
                       Code
-                    </button>
+                    </button> */}
                   </div>
                 </div>
               </div>
