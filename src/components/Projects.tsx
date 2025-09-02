@@ -6,10 +6,7 @@ const Projects: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<string>('all');
 
   const categories = [
-    { id: 'all', label: 'All Projects' },
-    { id: 'fullstack', label: 'Full Stack' },
-    { id: 'frontend', label: 'Frontend' },
-    // { id: 'design', label: 'Design' }
+    { id: 'all', label: 'Major Projects' }
   ];
 
   const filteredProjects = activeCategory === 'all' 

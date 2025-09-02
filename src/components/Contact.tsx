@@ -70,7 +70,12 @@ const Contact: React.FC = () => {
                 </div>
 
                 {contactInfo.linkedin && (
-                  <div className="flex items-center gap-4 p-4 bg-gray-800 rounded-xl hover:bg-gray-700 transition-colors duration-300">
+                  <a 
+                    href={`https://linkedin.com/in/${contactInfo.linkedin}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-4 p-4 bg-gray-800 rounded-xl hover:bg-gray-700 transition-colors duration-300"
+                  >
                     <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
                       <Linkedin size={24} />
                     </div>
@@ -78,11 +83,16 @@ const Contact: React.FC = () => {
                       <p className="text-gray-400 text-sm">LinkedIn</p>
                       <p className="text-white font-semibold">/in/{contactInfo.linkedin}</p>
                     </div>
-                  </div>
+                  </a>
                 )}
 
                 {contactInfo.github && (
-                  <div className="flex items-center gap-4 p-4 bg-gray-800 rounded-xl hover:bg-gray-700 transition-colors duration-300">
+                  <a 
+                    href={`https://github.com/${contactInfo.github}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-4 p-4 bg-gray-800 rounded-xl hover:bg-gray-700 transition-colors duration-300"
+                  >
                     <div className="w-12 h-12 bg-gray-600 rounded-full flex items-center justify-center">
                       <Github size={24} />
                     </div>
@@ -90,7 +100,7 @@ const Contact: React.FC = () => {
                       <p className="text-gray-400 text-sm">GitHub</p>
                       <p className="text-white font-semibold">@{contactInfo.github}</p>
                     </div>
-                  </div>
+                  </a>
                 )}
               </div>
             </div>
